@@ -1,0 +1,207 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: #3c3c3c;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  background-color: #333333;
+  align-items: center;
+}
+.header * {
+  margin: 0;
+  padding: 0;
+}
+.header .title {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 42px;
+  color: #fafafa;
+  margin-left: 20px;
+}
+@media screen and (max-width: 992px) {
+  .header .title {
+    margin: auto;
+  }
+}
+.header .anchors {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .header .anchors {
+    display: none;
+  }
+}
+.header .anchors .anchor a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #fafafa;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 992px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 92%;
+  }
+}
+
+.main {
+  padding: 60px 0;
+  font-size: 18px;
+}
+.main .block1, .main .block2, .main .block3, .main .block4, .main .block5 {
+  padding: 0 0 60px 0;
+}
+.main .block1 .title, .main .block2 .title, .main .block3 .title, .main .block4 .title, .main .block5 .title {
+  text-align: center;
+  margin-top: 24px;
+}
+.main .block1 .txt.bold, .main .block2 .txt.bold, .main .block3 .txt.bold, .main .block4 .txt.bold, .main .block5 .txt.bold {
+  font-weight: 800;
+}
+.main .block1 .txt a, .main .block2 .txt a, .main .block3 .txt a, .main .block4 .txt a, .main .block5 .txt a {
+  font-weight: 800;
+  font-style: italic;
+  color: #333333;
+}
+.main .block1 .quote, .main .block2 .quote, .main .block3 .quote, .main .block4 .quote, .main .block5 .quote {
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+}
+.main .block1 .quote .name, .main .block2 .quote .name, .main .block3 .quote .name, .main .block4 .quote .name, .main .block5 .quote .name {
+  font-size: 14px;
+}
+.main .block1 img, .main .block2 img, .main .block3 img, .main .block4 img, .main .block5 img {
+  max-width: 100%;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 60px 0;
+}
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  padding: 10px;
+  filter: drop-shadow(1px 1px 10px #000);
+}
+
+.menu {
+  position: fixed;
+  bottom: 30px;
+  background-color: #f5f5f5;
+  left: 20px;
+  height: 40px;
+  width: 70px;
+  border-radius: 30px;
+  filter: drop-shadow(2px 2px 3px #000000);
+  z-index: 5;
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    display: none !important;
+  }
+}
+.menu .menuButton {
+  padding: 8px;
+  overflow: hidden;
+}
+.menu .menuButton .hamburguer {
+  height: 3px;
+  width: 25px;
+  margin-top: 30px;
+  background-color: #000000;
+  margin: 4px auto;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.menu .menuButton .hamburguer.open {
+  transition: 1s;
+}
+.menu .menuButton .hamburguer.open:first-child {
+  transform: rotate(45deg);
+  transition: 1s;
+  margin-top: 10px;
+}
+.menu .menuButton .hamburguer.open:nth-child(2) {
+  transform: translateX(100px);
+  transition: 0.4s;
+}
+.menu .menuButton .hamburguer.open:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: 1s;
+  margin-top: -13px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  transition: 1s;
+}
+@media screen and (min-width: 992px) {
+  .overlay {
+    display: none !important;
+  }
+}
+.overlay.open {
+  display: block;
+}
+.overlay .menuOptions {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+.overlay .menuOptions .sectionsList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 0;
+}
+.overlay .menuOptions .sectionsList .section {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+}
+@media screen and (max-width: 992px) {
+  .overlay .menuOptions .sectionsList .section {
+    font-size: 26px;
+  }
+}
+.overlay .menuOptions .sectionsList .section a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
