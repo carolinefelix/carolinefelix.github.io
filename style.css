@@ -26,8 +26,8 @@ body {
   padding: 0;
 }
 .header .title {
-  font-family: "Fredericka the Great", cursive;
-  font-size: 42px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
   color: #fafafa;
   margin-left: 20px;
 }
@@ -46,6 +46,7 @@ body {
   }
 }
 .header .anchors .anchor a {
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
   margin-right: 20px;
   color: #fafafa;
