@@ -100,7 +100,7 @@
                 <p class="txt">Para a advogada, o Estatuto da Criança e do Adolescente (ECA), apesar de parecer muito antigo, ainda é muito recente para conseguir suprir anos de negligência, mas ainda assim, é um passo importante no sentido de proteger e garantir direitos e proteção aos interesses da criança e do adolescente.</p> 
                 <p class="txt">“A redução da maioridade não traria impacto na redução da violência, ao contrário, faria com que crianças cada vez mais jovens fossem recrutadas pelo crime. Então se a redução da maioridade penal passa a ser 16 anos, o crime passará a buscar crianças com 12, 13 e 14 anos. Quanto menor a idade da criança, mais fácil de ludibriar e conquistar essa criança para o crime, pois ainda estão em fase de formação de caráter, opinião, responsabilidades”, finaliza.</p>
                 <p class="txt">Nesse sentido, as influencias em volta das escolas, abrem o precedente: como fazer para contornar esse cenário da falta de vinculo da instituição de ensino com a criança?</p>
-                <img src="/infografico-rendimento-desktop.jpg" alt="Infografico" class="infografico m-none">
+                <img src="/infografico-rendimento-desktop.png" alt="Infografico" class="infografico m-none">
                 <img src="/infografico-rendimento-mobile.png" alt="Infografico" class="infografico d-none">
                 <p class="txt">Quando essas políticas públicas deixam de chegar a esses jovens, seja pela falta de medidas socioeducativas ou outros métodos sociais, condições de apoio, incentivo, entre outras, é também quando passam a ocorrer as desistências.</p>
                 <p class="txt">Na opinião de Jaqueline Marinho, as escolas devem entender que além da importância do professor compreender o lugar em que a escola está inserida - entendendo as necessidades daquele bairro, a cultura local etc para contribuir e conseguir alcançar esses jovens - é preciso concentrar esforços em métodos de ensino inovadores que possam ser usados como forma de prender a atenção desse aluno.</p>
@@ -135,7 +135,7 @@
                 <p class="quote">Uma coisa é você discursar Pedagogia da Autonomia, outra coisa é você falar: amanhã eu estou lá e tudo bem.<br/>
                 <span class="name">-Celma Marchetto</span></p>
                 
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/310876597&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sephbeats" title="seph" target="_blank" style="color: #cccccc; text-decoration: none;">seph</a> · <a href="https://soundcloud.com/sephbeats/nobody-knows-where-the-wind-goes" title="nobody knows where the wind goes" target="_blank" style="color: #cccccc; text-decoration: none;">nobody knows where the wind goes</a></div>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/938609284&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/carol-felix-13" title="Caroline Felix" target="_blank" style="color: #cccccc; text-decoration: none;">Caroline Felix</a> · <a href="https://soundcloud.com/carol-felix-13/educast-1-podcast-da-acao-educativa" title="EDUCAST #1 - PODCAST DA AÇÃO EDUCATIVA" target="_blank" style="color: #cccccc; text-decoration: none;">EDUCAST #1 - PODCAST DA AÇÃO EDUCATIVA</a></div>
                 
                 <p class="txt">"Eu conversava com ela todo dia, ela não achou que ninguém pudesse ser legal, veja como é a inversão daquilo que ela nunca teve, ela nunca foi ouvida, ela sofria bullyng, ela tinha vergonha do cabelo” complementa.</p>
                 <p class="txt">Esse tipo de acontecimento, é um fator que tem influenciado fortemente, no desempenho dos profissionais da educação e que impacta também no ensino, em que professores que passam por situações semelhantes, muitas vezes, pedem afastamento do serviço. A coordenadora brinca que teve um “surto de maturidade” e que, após o ocorrido, focou em resolver a questão da forma mais democrática possível.</p>
@@ -248,13 +248,16 @@
         menu();
         watchMenu();
 
-        $(".carrossel").slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
+        setTimeout(function(){
+            $(".carrossel").slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        },2000)
+
     </script>
 </body>
 </html>
